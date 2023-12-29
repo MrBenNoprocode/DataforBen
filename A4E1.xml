@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject id="0" objectName="_selfplayer" isTemp="false" />
+    <TemplateObject id="1" objectName="target" isTemp="false" />
+  </TemplateObjectList>
+  <RefParamList>
+    <Vector3i name="_BulletDir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+  </RefParamList>
+  <Action tag="" length="0.500" loop="false">
+    <Track trackName="TriggerParticleTick0" eventType="TriggerParticleTick" guid="a66c0c5d-659b-4258-b6f7-6630f5046041" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="TriggerParticleTick" time="0.000" isDuration="false" guid="f9c399df-e6f2-468d-9176-01b01aa08a8e">
+        <TemplateObject name="targetId" id="-1" objectName="None" isTemp="false" refParamName="" useRefParam="false" />
+        <TemplateObject name="objectSpaceId" id="1" objectName="target" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="resourceName" value="prefab_skill_effects/hero_skill_effects/150_hanxin/hanxin_hurt_01" refParamName="" useRefParam="false" />
+        <Vector3 name="bindPosOffset" x="0.000" y="2.000" z="0.000" refParamName="" useRefParam="false" />
+        <EulerAngle name="bindRotOffset" x="-60.000" y="20.000" z="0.000" refParamName="" useRefParam="false" />
+        <bool name="bBulletDir" value="true" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="SkillFuncInstant0" eventType="SkillFuncInstant" guid="7879a165-e938-4a9e-b9f6-49a902c8c696" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="SkillFuncInstant" time="0.000" isDuration="false" guid="8d8888c6-0418-4f83-9b8a-8cca045f839c" />
+    </Track>
+    <Track trackName="PlayHeroSoundTick8" eventType="PlayHeroSoundTick" guid="84fbcdc4-2a8a-4958-8e2c-bad78c59a5ec" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="PlayHeroSoundTick" time="0.000" isDuration="false" guid="c83eded0-4c08-43e3-b2f3-66f04b6db6fa">
+        <TemplateObject name="targetId" id="1" objectName="target" isTemp="false" refParamName="" useRefParam="false" />
+        <TemplateObject name="sourceId" id="0" objectName="_selfplayer" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="eventName" value="Play_HanXin_Attack1_Hit" refParamName="" useRefParam="false" />
+        <Array name="extraSkinId" refParamName="" useRefParam="false" type="uint">
+          <uint value="35" />
+          <uint value="36" />
+          <uint value="37" />
+        </Array>
+      </Event>
+    </Track>
+  </Action>
+</Project>

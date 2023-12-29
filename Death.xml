@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject id="0" objectName="self" isTemp="false" />
+  </TemplateObjectList>
+  <RefParamList />
+  <Action tag="" length="4.500" loop="false">
+    <Track trackName="PlayAnimationTick0" eventType="PlayAnimationTick" guid="786f1ad6-fd57-4adc-b724-9b335c23e7ad" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="PlayAnimationTick" time="0.000" isDuration="false" guid="3153b846-ce43-4960-a327-eca19e401253">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="clipName" value="Dead" refParamName="" useRefParam="false" />
+        <float name="crossFadeTime" value="0.100" refParamName="" useRefParam="false" />
+        <int name="layer" value="0" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="PlayHeroSoundTick20" eventType="PlayHeroSoundTick" guid="f84eecc2-5fac-4332-bdac-76f4349ce55c" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="PlayHeroSoundTick" time="0.000" isDuration="false" guid="3f87828e-9011-4583-8e62-e1f668427e11">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <TemplateObject name="sourceId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="eventName" value="Play_HanXin_Voice_Dead" refParamName="" useRefParam="false" />
+        <Array name="extraSkinId" refParamName="" useRefParam="false" type="uint">
+          <uint value="35" />
+          <uint value="36" />
+          <uint value="37" />
+        </Array>
+      </Event>
+    </Track>
+    <Track trackName="15012" eventType="CheckSkinIdVirtualTick" guid="ff53c832-d60a-4409-bcdb-d35882717178" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="CheckSkinIdVirtualTick" time="0.000" isDuration="false" guid="af246dcf-4156-494f-a5ea-ad25cca6cf67">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <int name="skinId" value="15012" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="TriggerParticle0" eventType="TriggerParticle" guid="7fba7e46-e527-4f3c-8eb0-27cf64cc3e38" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Condition id="2" guid="ff53c832-d60a-4409-bcdb-d35882717178" status="true" />
+      <Event eventName="TriggerParticle" time="0.000" length="2.000" isDuration="true" guid="c797468b-c5af-4175-bf76-b8bc14a1e8b6">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="resourceName" value="prefab_skill_effects/hero_skill_effects/150_hanxin/siwang_tongyong_01" refParamName="" useRefParam="false" />
+        <bool name="bHideWhenDead" value="false" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+  </Action>
+</Project>
